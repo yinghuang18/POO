@@ -7,7 +7,7 @@ public class Main {
         //TIP Press <shortcut actionId="ShowIntentionActions"/> with your caret at the highlighted text
         // to see how IntelliJ IDEA suggests fixing it.
         Scanner scanner = new Scanner(System.in);
-        System.out.print("Dame un número tope: ");
+        System.out.print("Hola, dame un número tope: ");
         int numeroFinal = Integer.parseInt(scanner.nextLine());
         for (int numeroInicio = 0; numeroInicio <= numeroFinal; numeroInicio++) {
             System.out.println(numeroInicio);
