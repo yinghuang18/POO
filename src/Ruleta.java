@@ -16,23 +16,31 @@ public class Ruleta {
 
     public void menu() {
 
-        System.out.println("Opciones: ");
+        System.out.println("Opciones a elegir: ");
         System.out.println("1. Tipo de apuesta");
         System.out.println("2. ");
 
     }
 
     public int mostrarMenu() {
-        System.out.println("Elegir una opcion:");
         String respuesta = scanner.nextLine();
         int opcion = Integer.parseInt(respuesta);
         return opcion;
     }
 
-    public <opcion> int leerOpcion(opcion) {
+    public int leerOpcion(Scanner in) {
+        String[] seleccion = new String[5];
+        int i = opcion;
+
 
         return 0;
     }
+    public static void ejecutarOpcion(int opcion, Scanner in) {
+
+
+    }
+
+
 
 
 }
