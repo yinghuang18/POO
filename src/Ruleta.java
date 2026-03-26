@@ -28,6 +28,13 @@ public class Ruleta {
         int opcion = Integer.parseInt(respuesta);
         return opcion;
     }
+
+    public <opcion> int leerOpcion(opcion) {
+
+        return 0;
+    }
+
+
 }
 
 
