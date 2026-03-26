@@ -18,7 +18,8 @@ public class Ruleta {
 
         System.out.println("Opciones a elegir: ");
         System.out.println("1. Tipo de apuesta");
-        System.out.println("2. ");
+        System.out.println("2. Mostrar resultado");
+        System.out.println("3. Mostrar estadística");
 
     }
 
