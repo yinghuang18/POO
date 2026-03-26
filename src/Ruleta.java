@@ -14,16 +14,19 @@ public class Ruleta {
         menu();
     }
 
-    public int menu() {
+    public void menu() {
 
-        System.out.println("Seleccione una opción:");
-        System.out.println("1. Elegir tipo de apuesta");
+        System.out.println("Opciones: ");
+        System.out.println("1. Tipo de apuesta");
         System.out.println("2. ");
-        int opcion = scanner.nextInt();
-        return opcion;
+
     }
 
-    public static void mostrarMenu() {
+    public int mostrarMenu() {
+        System.out.println("Elegir una opcion:");
+        String opcion = scanner.nextLine();
+
+
 
 
     }
