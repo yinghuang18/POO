@@ -2,7 +2,7 @@ import java.util.Random;
 import java.util.Scanner;
 public class Ruleta {
     public static final int Max_historial = 100;
-    public static int[] historilNumeros= new int[Max_historial];
+    public static int[] historialNumeros= new int[Max_historial];
     public static int[] historialApuestas = new int[Max_historial];
     public static boolean[] historialAciertos = new boolean[Max_historial];
     public static int historialSize = 0;
@@ -119,11 +119,23 @@ public class Ruleta {
         if (historialSize < Max_historial){
             historialAciertos[historialSize] = acierto;
             historialApuestas[historialSize] = monto;
-            historilNumeros[historialSize] = numeroRandom;
+            historialNumeros[historialSize] = numeroRandom;
             historialSize++;
         }
 
 
+    }
+    public static void mostrarResultado(int numeroRandom, char opcionApuesta, int monto, boolean acierto) {
+
+        System.out.println("El número obtenido en la ruleta es: " + numeroRandom);
+        System.out.println("El tipo de apuesta realizada es: " + opcionApuesta);
+        System.out.println("El monto apostado es: " + monto);
+        System.out.println("El resultado de la apuesta es:");
+        if (acierto == true) {
+            System.out.println("Ganaste");
+        } else {
+            System.out.println("Perdiste");
+        }
     }
 
 
