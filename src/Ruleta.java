@@ -7,7 +7,7 @@ public class Ruleta {
     public static boolean[] historialAciertos = new boolean[Max_historial];
     public static int historialSize = 0;
 
-    public static Random rng = new Random();
+    public static Random random = new Random();
     public static int[] numerosRojos = {1,3,5,7,9,12,14,16,18,19,21,23,25,27,30,32,34,36};
 
     public static void main(String[] args) {
@@ -45,6 +45,7 @@ public class Ruleta {
                 iniciarRonda(scanner);
                 break;
             case 2:
+                girarRuleta();
                 break;
             case 3:
                 break;
@@ -68,6 +69,15 @@ public class Ruleta {
         char opcionApuesta = scanner.next().toUpperCase().charAt(0);
         return opcionApuesta;
 
+    }
+    public static int girarRuleta() {
+        int numeroRandom = random.nextInt(37);
+
+        return numeroRandom;
+    }
+
+    public static boolean evaluarResultado(int numero, char tipo) {
+        return false;
     }
 
 
