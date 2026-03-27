@@ -22,7 +22,7 @@ public class Ruleta {
             mostrarMenu();
             opcionMenu = leerOpcion(scanner);
             ejecutarOpcion(opcionMenu, scanner);
-        } while (opcionMenu != 4);
+        } while (opcionMenu != 3);
 
     }
 
@@ -60,6 +60,7 @@ public class Ruleta {
         int monto = scanner.nextInt();
         int numeroRandom = girarRuleta();
         boolean acierto = evaluarResultado(numeroRandom, opcionApuesta);
+        registrarResultado(numeroRandom, monto, acierto);
         mostrarResultado(numeroRandom, opcionApuesta, monto, acierto);
 
 
@@ -134,7 +135,7 @@ public class Ruleta {
 
     }
     public static void mostrarResultado(int numeroRandom, char opcionApuesta, int monto, boolean acierto) {
-        registrarResultado(numeroRandom, monto, acierto);
+
         System.out.println("El número obtenido en la ruleta es: " + numeroRandom);
         System.out.println("El tipo de apuesta realizada es: " + opcionApuesta);
         System.out.println("El monto apostado es: " + monto);
