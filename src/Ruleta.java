@@ -56,7 +56,9 @@ public class Ruleta {
 
     }
     public static void iniciarRonda(Scanner scanner) {
-        leerTipoApuesta(scanner);
+        char opcionApuesta = leerTipoApuesta(scanner);
+        int numeroRandom = girarRuleta();
+        boolean acierto = evaluarResultado(numeroRandom, opcionApuesta);
 
 
     }
@@ -76,8 +78,30 @@ public class Ruleta {
         return numeroRandom;
     }
 
-    public static boolean evaluarResultado(int numero, char tipo) {
-        return false;
+    public static boolean evaluarResultado(int numeroRandom, char opcionApuesta) {
+        switch (opcionApuesta) {
+            case 'P':
+                return numeroRandom % 2 == 0;
+            case 'I':
+                return numeroRandom % 2 != 0;
+            case 'R':
+                for (int recorrer = 0; recorrer < numerosRojos.length; recorrer++) {
+                    if (numerosRojos[recorrer] == numeroRandom) {
+                        return true;
+                    }
+                }
+                return false;
+            case 'N':
+                for (int recorrer = 0; recorrer < numerosRojos.length; recorrer++) {
+                    if (numerosRojos[recorrer] == numeroRandom) {
+                        return false;
+                    }
+                }
+                return true;
+            default:
+                return false;
+        }
+
     }
 
 
