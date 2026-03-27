@@ -6,6 +6,7 @@ public class Ruleta {
     public static int[] historialApuestas = new int[Max_historial];
     public static boolean[] historialAciertos = new boolean[Max_historial];
     public static int historialSize = 0;
+    public static int[] historialGananciasPerdidas = new int[Max_historial];
 
     public static Random random = new Random();
     public static int[] numerosRojos = {1,3,5,7,9,12,14,16,18,19,21,23,25,27,30,32,34,36};
@@ -29,9 +30,8 @@ public class Ruleta {
 
         System.out.println("Opciones a elegir: ");
         System.out.println("1. Iniciar ronda");
-        System.out.println("2. Mostrar resultado");
-        System.out.println("3. Mostrar estadística");
-        System.out.println("4. Salir");
+        System.out.println("2. Mostrar estadística");
+        System.out.println("3. Salir");
     }
 
     public static int leerOpcion(Scanner scanner) {
@@ -45,12 +45,11 @@ public class Ruleta {
                 iniciarRonda(scanner);
                 break;
             case 2:
-                girarRuleta();
+                mostrarEstadisticas();
                 break;
             case 3:
                 break;
-            case 4:
-                break;
+
         }
 
 
@@ -61,7 +60,8 @@ public class Ruleta {
         int monto = scanner.nextInt();
         int numeroRandom = girarRuleta();
         boolean acierto = evaluarResultado(numeroRandom, opcionApuesta);
-        registrarResultado(numeroRandom, monto, acierto);
+        mostrarResultado(numeroRandom, opcionApuesta, monto, acierto);
+
 
 
     }
@@ -120,13 +120,21 @@ public class Ruleta {
             historialAciertos[historialSize] = acierto;
             historialApuestas[historialSize] = monto;
             historialNumeros[historialSize] = numeroRandom;
+            int montoRonda;
+            if (acierto == true){
+                montoRonda = monto;
+
+            } else {
+                montoRonda = - monto;
+            }
+            historialGananciasPerdidas[historialSize] = montoRonda;
             historialSize++;
         }
 
 
     }
     public static void mostrarResultado(int numeroRandom, char opcionApuesta, int monto, boolean acierto) {
-
+        registrarResultado(numeroRandom, monto, acierto);
         System.out.println("El número obtenido en la ruleta es: " + numeroRandom);
         System.out.println("El tipo de apuesta realizada es: " + opcionApuesta);
         System.out.println("El monto apostado es: " + monto);
@@ -136,12 +144,41 @@ public class Ruleta {
         } else {
             System.out.println("Perdiste");
         }
+
     }
+    public static void mostrarEstadisticas() {
+
+        int cantidadRondasJugadas = historialSize;
+        int cantidadAciertos = 0;
+        int montoTotalApostado = 0;
+        int gananciaPerdida = 0;
+
+        for (int recorrer = 0; recorrer < historialSize; recorrer++) {
+
+            if (historialAciertos[recorrer] == true) {
+                cantidadAciertos++;
+            }
+            montoTotalApostado += historialApuestas[recorrer];
+            gananciaPerdida += historialGananciasPerdidas[recorrer];
+
+        }
+        double porcentaje = (1.0 * cantidadAciertos / historialSize) * 100;
+        System.out.println("Cantidad de rondas jugadas: " + cantidadRondasJugadas);
+        System.out.println("Total de aciertos: " + cantidadAciertos);
+        System.out.println("Total apostado: " + montoTotalApostado);
+        System.out.println("Porcentaje de aciertos: " + porcentaje + "%");
+        System.out.println("Las ganancias y perdidas neta son: " + gananciaPerdida);
 
 
 
-
-
+    }
 }
+
+
+
+
+
+
+
 
 
