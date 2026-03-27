@@ -35,11 +35,8 @@ public class Ruleta {
     }
 
     public int leerOpcion(Scanner scanner) {
-        String[] seleccion = new String[5];
-        int i = opcion;
-
-
-        return 0;
+        int opcionSelecionada = scanner.nextInt();
+        return opcionSelecionada;
     }
     public static void ejecutarOpcion(int opcion, Scanner in) {
 
