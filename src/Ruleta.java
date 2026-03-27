@@ -15,21 +15,26 @@ public class Ruleta {
     }
 
     public void menu() {
+        Scanner scanner = new Scanner(System.in);
+        int opcion;
+        do {
+            mostrarMenu();
+            opcion = leerOpcion(scanner);
+            ejecutarOpcion(opcion, scanner);
+        } while (opcion != 4);
+
+    }
+
+    public void mostrarMenu() {
 
         System.out.println("Opciones a elegir: ");
-        System.out.println("1. Tipo de apuesta");
+        System.out.println("1. Iniciar ronda");
         System.out.println("2. Mostrar resultado");
         System.out.println("3. Mostrar estadística");
-
+        System.out.println("4. Salir");
     }
 
-    public int mostrarMenu() {
-        String respuesta = scanner.nextLine();
-        int opcion = Integer.parseInt(respuesta);
-        return opcion;
-    }
-
-    public int leerOpcion(Scanner in) {
+    public int leerOpcion(Scanner scanner) {
         String[] seleccion = new String[5];
         int i = opcion;
 
