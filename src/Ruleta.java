@@ -103,6 +103,16 @@ public class Ruleta {
         }
 
     }
+    public static boolean esRojo(int numeroRandom) {
+
+        for (int recorrer = 0; recorrer < numerosRojos.length; recorrer++){
+            if (numeroRandom == numerosRojos[recorrer]) {
+                return true;
+            }
+        }
+        return false;
+    }
+
 
 
 
