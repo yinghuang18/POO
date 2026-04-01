@@ -12,6 +12,7 @@ public class Ruleta {
     public static int[] numerosRojos = {1,3,5,7,9,12,14,16,18,19,21,23,25,27,30,32,34,36};
 
     public static void main(String[] args) {
+
         menu();
     }
 
@@ -168,7 +169,7 @@ public class Ruleta {
         System.out.println("Total de aciertos: " + cantidadAciertos);
         System.out.println("Total apostado: " + montoTotalApostado);
         System.out.println("Porcentaje de aciertos: " + porcentaje + "%");
-        System.out.println("Las ganancias y perdidas neta son: " + gananciaPerdida);
+        System.out.println("Las ganancias o perdidas neta son: " + gananciaPerdida);
 
 
 
