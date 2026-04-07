@@ -1,4 +1,6 @@
 import javax.swing.*;
+import java.util.ArrayList;
+import java.util.List;
 /**
  * Clase que representa la ventana de Login del Casino Black Cat.
  * Permite ingresar credenciales para acceder al sistema.
@@ -20,7 +22,7 @@ public class VentanaLogin {
     public VentanaLogin() {
 // TODO: inicializar usuarios hardcodeados
 // TODO: inicializar y configurar la ventana
-
+    USUARIOS.add(new Usuario("Ying01", "112233", "Ying"));
 
 
     }
