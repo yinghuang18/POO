@@ -37,7 +37,8 @@ public class VentanaLogin {
      */
     public void mostrarVentana() {
 // TODO: mostrar ventana
-        JOptionPane.showMessageDialog(null, new VentanaLogin());
+    frame.setLocationRelativeTo(null);
+    frame.setVisible(true);
     }
     /**
      * Maneja el evento de login al presionar el botón.
