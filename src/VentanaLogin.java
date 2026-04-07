@@ -23,7 +23,11 @@ public class VentanaLogin {
 // TODO: inicializar usuarios hardcodeados
 // TODO: inicializar y configurar la ventana
     USUARIOS.add(new Usuario("Ying01", "112233", "Ying"));
-
+    frame.add(lblUsuario);
+    frame.add(txtUsuario);
+    frame.add(lblClave);
+    frame.add(txtClave);
+    frame.add(btnIngresar);
 
     }
 
