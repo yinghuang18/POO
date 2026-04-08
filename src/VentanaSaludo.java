@@ -1,5 +1,4 @@
 import javax.swing.*;
-import java.awt.*;
 public class VentanaSaludo {
     private final JFrame frame = new JFrame("Juego de la ruleta");
     private final JLabel lblSaludo = new JLabel();
