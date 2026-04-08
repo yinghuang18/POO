@@ -50,7 +50,13 @@ public class VentanaLogin {
 // TODO: implementar lógica de login
        String usuario = txtUsuario.getText();
        String contraseña = new String(txtClave.getPassword());
+       String nombreUsuario = validarCredenciales(usuario, contraseña);
+       if (nombreUsuario.isEmpty()) {
+           JOptionPane.showMessageDialog(frame, "Los datos ingresados son incorrectas.");
+       } else {
 
+
+       }
 
 
 
