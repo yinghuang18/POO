@@ -55,7 +55,6 @@ public class VentanaLogin {
            JOptionPane.showMessageDialog(frame, "Los datos ingresados son incorrectas.");
        } else {
 
-
        }
 
 
