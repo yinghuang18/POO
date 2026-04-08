@@ -51,10 +51,12 @@ public class VentanaLogin {
        String usuario = txtUsuario.getText();
        String contraseña = new String(txtClave.getPassword());
        String nombreUsuario = validarCredenciales(usuario, contraseña);
-       if (nombreUsuario.isEmpty()) {
-           JOptionPane.showMessageDialog(frame, "Los datos ingresados son incorrectas.");
-       } else {
+       if (!nombreUsuario.isEmpty()) {
+           VentanaSaludo saludo = new VentanaSaludo(nombreUsuario);
+           saludo.mostrarVentana();
 
+       } else {
+           JOptionPane.showMessageDialog(frame, "Los datos no coinciden");
        }
 
 
@@ -100,7 +102,7 @@ public class VentanaLogin {
  * Abre la ventana de registro para crear un nuevo usuario.
  * Debe cerrar la ventana actual e invocar a VentanaRegistro.
  */
-| void abrirRegistro() {
+ void abrirRegistro() {
 // TODO: abrir ventana de registro y cerrar login
     }
 }
