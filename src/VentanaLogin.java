@@ -23,6 +23,7 @@ public class VentanaLogin {
 // TODO: inicializar usuarios hardcodeados
 // TODO: inicializar y configurar la ventana
     USUARIOS.add(new Usuario("Ying01", "112233", "Ying"));
+
     frame.add(lblUsuario);
     frame.add(txtUsuario);
     frame.add(lblClave);
@@ -47,9 +48,12 @@ public class VentanaLogin {
     private void login() {
 
 // TODO: implementar lógica de login
-        String nombreIngresado = JOptionPane.showInputDialog(null,"Ingrese su nombre:");
-        String usuarioIngresado = JOptionPane.showInputDialog(null,"Ingrese su nombre de usuario:");
-        String contraseñaIngresado = JOptionPane.showInputDialog(null,"Ingrese su contraseña:");
+       String usuario = txtUsuario.getText();
+       String contraseña = new String(txtClave.getPassword());
+
+
+
+
 
     }
     /**
@@ -61,15 +65,31 @@ public class VentanaLogin {
      */
     private String validarCredenciales(String u, String p) {
 // TODO: recorrer arreglo y validar credenciales
-        for (int recorrer = 0; recorrer < USUARIOS.length(); recorrer++ ) {
-
-            if (validarCredenciales(u, p)) {
-                return USUARIOS.get(recorrer).getNombre();
-            } else {
-                return
+        for (Usuario recorrer : USUARIOS) {
+            if (recorrer.validarCredenciales(u, p)) {
+                return recorrer.getNombre();
             }
         }
+        /**esta forma lo que hace es recorrer la lista USUARIOS e ir preguntando
+         * si es que tienen el mimso u y p, si es asi se llama al metodo .getNombre
+         * creada en Usuario.java
+
+        * */
         return "";
+        /**
+         private String validarCredenciales(String u, String p) {
+         for (int i = 0; i < USUARIOS.size(); i++) {
+         Usuario usu = USUARIOS.get(i);
+         if (usu.validarCredenciales(u, p)) {
+         return usu.getNombre();
+         }
+         }
+         return "";
+         }
+
+         de esta forma hace lo mismo pero en el for se alarga mas
+         * **/
+
     }
 /**
  * Abre la ventana de registro para crear un nuevo usuario.
