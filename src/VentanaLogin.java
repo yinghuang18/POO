@@ -52,11 +52,11 @@ public class VentanaLogin {
     private void login() {
 
 // TODO: implementar lógica de login
-       String usuario = txtUsuario.getText();
-       String contraseña = new String(txtClave.getPassword());
-       String nombreUsuario = validarCredenciales(usuario, contraseña);
-       if (!nombreUsuario.isEmpty()) {
-           VentanaSaludo saludo = new VentanaSaludo(nombreUsuario);
+       String usuarioIngresado = txtUsuario.getText();
+       String contraseñaIngresado = new String(txtClave.getPassword());
+       String nombreIngresado = validarCredenciales(usuarioIngresado, contraseñaIngresado);
+       if (!nombreIngresado.isEmpty()) {
+           VentanaSaludo saludo = new VentanaSaludo(nombreIngresado);
            saludo.mostrarVentana();
 
        } else {
