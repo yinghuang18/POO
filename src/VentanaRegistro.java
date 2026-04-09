@@ -1,4 +1,5 @@
 import javax.swing.*;
+import java.awt.*;
 
 public class VentanaRegistro {
     private final JFrame frame = new JFrame("Registro - Casino Black Cat");
@@ -11,6 +12,9 @@ public class VentanaRegistro {
     private final JButton btnRegistrar = new JButton("Registrar");
 
     public VentanaRegistro() {
+        frame.setSize(400, 180);
+        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        frame.setLayout(new FlowLayout());
         frame.add(lblUsuario);
         frame.add(txtUsuario);
         frame.add(lblNombre);
@@ -19,10 +23,22 @@ public class VentanaRegistro {
         frame.add(txtClave);
         frame.add(btnRegistrar);
 
+
     }
     public void mostrarVentana() {
         frame.setLocationRelativeTo(null);
         frame.setVisible(true);
     }
-
+    private void registrarUsuario() {
+        String nombreIngresado = txtNombre.getText();
+        String usuarioIngresado = txtUsuario.getText();
+        String claveIngresado = new String(txtClave.getPassword());
+        if (!nombreIngresado.isEmpty() && !usuarioIngresado.isEmpty() && !claveIngresado.isEmpty()) {
+            Usuario nuevoUsuario = new Usuario(usuarioIngresado, claveIngresado, nombreIngresado);
+            VentanaLogin.USUARIOS.add(nuevoUsuario);
+            JOptionPane.showMessageDialog(frame, "Usuario registrado exitosamente");
+            frame.dispose();
+        } else {
+            JOptionPane.showMessageDialog(frame, "Complete toda la infromación solicitada");
+    }
 }
