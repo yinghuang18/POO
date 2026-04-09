@@ -111,6 +111,5 @@ public class VentanaLogin {
      frame.dispose();
      VentanaRegistro registro = new VentanaRegistro();
      registro.mostrarVentana();
-
     }
 }
