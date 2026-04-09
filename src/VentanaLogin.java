@@ -101,7 +101,6 @@ public class VentanaLogin {
 
          de esta forma hace lo mismo pero en el for se alarga mas
          * **/
-
     }
 /**
  * Abre la ventana de registro para crear un nuevo usuario.
