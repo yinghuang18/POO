@@ -25,7 +25,7 @@ public class VentanaLogin {
 // TODO: inicializar y configurar la ventana
     USUARIOS.add(new Usuario("Ying01", "112233", "Ying"));
     frame.setSize(400, 180);
-    frame.setDefaultLookAndFeelDecorated(JFrame.EXIT_ON_CLOSE);
+    frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
     frame.setLayout(new FlowLayout());
     frame.add(lblUsuario);
     frame.add(txtUsuario);
@@ -58,6 +58,7 @@ public class VentanaLogin {
        if (!nombreIngresado.isEmpty()) {
            VentanaSaludo saludo = new VentanaSaludo(nombreIngresado);
            saludo.mostrarVentana();
+           frame.dispose();
 
        } else {
            JOptionPane.showMessageDialog(frame, "Los datos no coinciden");

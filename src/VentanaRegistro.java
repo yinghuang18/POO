@@ -25,10 +25,12 @@ public class VentanaRegistro {
 
 
     }
+
     public void mostrarVentana() {
         frame.setLocationRelativeTo(null);
         frame.setVisible(true);
     }
+
     private void registrarUsuario() {
         String nombreIngresado = txtNombre.getText();
         String usuarioIngresado = txtUsuario.getText();
@@ -40,5 +42,6 @@ public class VentanaRegistro {
             frame.dispose();
         } else {
             JOptionPane.showMessageDialog(frame, "Complete toda la infromación solicitada");
+        }
     }
 }
