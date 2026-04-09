@@ -1,4 +1,5 @@
 import javax.swing.*;
+import java.awt.*;
 import java.util.ArrayList;
 import java.util.List;
 /**
@@ -23,12 +24,15 @@ public class VentanaLogin {
 // TODO: inicializar usuarios hardcodeados
 // TODO: inicializar y configurar la ventana
     USUARIOS.add(new Usuario("Ying01", "112233", "Ying"));
-
+    frame.setSize(400, 180);
+    frame.setDefaultLookAndFeelDecorated(JFrame.EXIT_ON_CLOSE);
+    frame.setLayout(new FlowLayout());
     frame.add(lblUsuario);
     frame.add(txtUsuario);
     frame.add(lblClave);
     frame.add(txtClave);
     frame.add(btnIngresar);
+    btnIngresar.addActionListener(e -> login());
 
     }
 
@@ -104,5 +108,9 @@ public class VentanaLogin {
  */
  void abrirRegistro() {
 // TODO: abrir ventana de registro y cerrar login
+     frame.dispose();
+     VentanaRegistro registro = new VentanaRegistro();
+     registro.mostrarVentana();
+
     }
 }
