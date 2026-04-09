@@ -27,6 +27,7 @@ public class VentanaApuesta {
         btnNegro.addActionListener(e -> login());
         btnVolver.addActionListener(e -> cerrarVentana());
     }
+
     public void mostrarVentana() {
         frame.setLocationRelativeTo(null);
         frame.setVisible(true);
@@ -38,5 +39,7 @@ public class VentanaApuesta {
         menu.mostrarVentana();
 
     }
+
+
 
 }
