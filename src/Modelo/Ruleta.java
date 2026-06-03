@@ -1,76 +1,71 @@
 package Modelo;
+
+import Modelo.Apuestas.ApuestaBase;
+
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Random;
+import java.util.Collections;
 
 public class Ruleta {
-    public static final int MAX_HISTORIAL = 100;
-    private int[] historialNumeros = new int[MAX_HISTORIAL];
-    private int[] historialApuestas = new int[MAX_HISTORIAL];
-    private boolean[] historialAciertos = new boolean[MAX_HISTORIAL];
-    private int[] historialGananciasPerdidas = new int[MAX_HISTORIAL];
-    private int historialSize = 0;
 
-    private Random random = new Random();
-    private int[] numerosRojos = {1,3,5,7,9,12,14,16,18,19,21,23,25,27,30,32,34,36};
+    private static final int[] NUMEROS_ROJOS = {
+            1,3,5,7,9,12,14,16,18,19,21,23,25,27,30,32,34,36
+    };
 
-    public int girarRuleta() {
-        return random.nextInt(37);
+    private int saldo;
+    private final Random            rng         = new Random();
+    private final List<Resultado>   resultados  = new ArrayList<>();
+
+    public Ruleta() {
+        this(0);
     }
 
-    public boolean evaluarResultado(int numeroRandom, String opcionApuesta) {
-        if (opcionApuesta.equals("Par")) {
-            return numeroRandom != 0 && numeroRandom % 2 == 0;
-        } else if (opcionApuesta.equals("Impar")) {
-            return numeroRandom % 2 != 0;
-        } else if (opcionApuesta.equals("Rojo")) {
-            return esRojo(numeroRandom);
-        } else if (opcionApuesta.equals("Negro")) {
-            return numeroRandom != 0 && !esRojo(numeroRandom);
-        }
+    public Ruleta(int saldoInicial) {
+        if (saldoInicial < 0) throw new IllegalArgumentException("Saldo inicial inválido");
+        this.saldo = saldoInicial;
+    }
+
+    public int getSaldo() { return saldo; }
+
+    public void depositar(int monto) {
+        if (monto <= 0) throw new IllegalArgumentException("Monto inválido");
+        saldo += monto;
+    }
+
+    public int girar() {
+        return rng.nextInt(37);
+    }
+
+    public String colorDe(int numero) {
+        if (numero == 0) return "VERDE";
+        return esRojo(numero) ? "ROJO" : "NEGRO";
+    }
+
+    public Resultado jugar(ApuestaBase apuesta) {
+        if (apuesta == null) throw new IllegalArgumentException("Apuesta requerida");
+
+        int monto = apuesta.getMonto();
+        if (monto <= 0) throw new IllegalArgumentException("Monto inválido");
+        if (monto > saldo) throw new IllegalArgumentException("Saldo insuficiente");
+
+        int numero      = girar();
+        String color    = colorDe(numero);
+        boolean acierto = apuesta.acierta(numero, color);
+
+        saldo += acierto ? monto : -monto;
+
+        Resultado resultado = new Resultado(numero, color, acierto, saldo, apuesta);
+        resultados.add(resultado);
+        return resultado;
+    }
+
+    public List<Resultado> getResultados() {
+        return Collections.unmodifiableList(resultados);
+    }
+
+    private boolean esRojo(int n) {
+        for (int r : NUMEROS_ROJOS) if (r == n) return true;
         return false;
-    }
-
-    private boolean esRojo(int numero) {
-        for (int recorrer : numerosRojos) {
-            if (recorrer == numero) return true;
-        }
-        return false;
-    }
-
-    public void registrarHistorial(int numero, int monto, boolean acierto) {
-        if (historialSize < MAX_HISTORIAL) {
-            historialNumeros[historialSize] = numero;
-            historialApuestas[historialSize] = monto;
-            historialAciertos[historialSize] = acierto;
-            int montoRonda;
-            if (acierto == true) {
-                montoRonda = monto;
-            } else {
-                montoRonda = -monto;
-            }
-            historialGananciasPerdidas[historialSize] = montoRonda;
-            historialSize++;
-        }
-    }
-
-    public String obtenerTextoHistorial() {
-        if (historialSize == 0) {
-            return "Aún no has jugado ninguna ronda.";
-        }
-
-        String texto = "--- HISTORIAL DE JUEGO ---\n";
-
-        for (int i = 0; i < historialSize; i++) {
-            String resultado;
-            if (historialAciertos[i] == true) {
-                resultado = "GANASTE";
-            } else {
-                resultado = "PERDISTE";
-            }
-            texto += "Ronda " + (i+1) + ": Número=" + historialNumeros[i] +
-                    ", Apostado=$" + historialApuestas[i] +
-                    ", " + resultado + " ($" + historialGananciasPerdidas[i] + ")\n";
-        }
-
-        return texto;
     }
 }
