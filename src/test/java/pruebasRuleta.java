@@ -1,3 +1,4 @@
+import Controlador.SessionController;
 import Modelo.Apuestas.ApuestaImpar;
 import Modelo.Apuestas.ApuestaNegro;
 import Modelo.Estadisticas;
@@ -61,6 +62,17 @@ public class pruebasRuleta {
 
     @Test
     void inicioSesionUsuarioNoRegistrado(){
+        SessionController sessionController = new SessionController();
+        boolean IntentoInicioSesion = sessionController.iniciarSesion("yingNoRegistrado", "contraseñaNoRegistrado");
+        assertFalse(IntentoInicioSesion);
 
+    }
+
+    @Test
+    void inicioSesionUsuarioNULO(){
+        SessionController sessionController = new SessionController();
+        sessionController.registrarUsuario("Ying01","Contraseña", "Ying");
+        boolean IntentoInicioSesion = sessionController.iniciarSesion(null, "Contraseña");
+        assertFalse(IntentoInicioSesion);
     }
 }
