@@ -46,13 +46,12 @@ public class pruebasRuleta {
     @Test
     void rachaYtipoMasJugado(){
         RepositorioEnMemoria repositorioEnMemoria = new RepositorioEnMemoria();
-        Estadisticas estadisticas= new Estadisticas(repositorioEnMemoria);
-
         repositorioEnMemoria.guardar(new Resultado(23,"ROJO",false,4000,new ApuestaNegro(2000)));
         repositorioEnMemoria.guardar(new Resultado(4,"PAR",false,2000,new ApuestaImpar(1000)));
         repositorioEnMemoria.guardar(new Resultado(5,"IMPAR",true,1000,new ApuestaImpar(2000)));
         repositorioEnMemoria.guardar(new Resultado(7,"IMPAR",true,3000,new ApuestaImpar(3000)));
-        repositorioEnMemoria.guardar(new Resultado(6,"PAR",false,6000,null ));
+        repositorioEnMemoria.guardar(new Resultado(9,"IMPAR",true,6000, null ));
+        Estadisticas estadisticas= new Estadisticas(repositorioEnMemoria);
         assertEquals(2, estadisticas.getVictorias());
         assertEquals(2, estadisticas.getRachaMaxima());
         assertEquals(50.0, estadisticas.getPorcentajeVictorias());
