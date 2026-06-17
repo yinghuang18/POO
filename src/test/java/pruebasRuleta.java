@@ -1,3 +1,4 @@
+import Modelo.Apuestas.ApuestaImpar;
 import Modelo.RepositorioEnMemoria;
 import Modelo.Ruleta;
 import org.junit.jupiter.api.Test;
@@ -20,11 +21,17 @@ public class pruebasRuleta {
 
     @Test
     void rechazarApuestaNula(){
+        Ruleta ruleta = new Ruleta(1340,new RepositorioEnMemoria());
+        assertThrows(IllegalArgumentException.class, () -> {ruleta.jugar(null);
+        });
 
     }
 
     @Test
     void apuestaMayorQueSaldo(){
+        Ruleta ruleta = new Ruleta(2000,new RepositorioEnMemoria());
+        assertThrows(IllegalArgumentException.class, () -> {ruleta.jugar(new ApuestaImpar(3000));
+        });
 
     }
 }
