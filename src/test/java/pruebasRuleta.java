@@ -10,8 +10,9 @@ import static org.junit.jupiter.api.Assertions.*;
 public class pruebasRuleta {
     @Test
     void rechazarSaldoInicialNegativo() {
-        assertThrows(IllegalArgumentException.class, () -> {new Ruleta(-1000, new RepositorioEnMemoria());
+        Exception exception = assertThrows(IllegalArgumentException.class, () -> {new Ruleta(-1000, new RepositorioEnMemoria());
         });
+        assertEquals("Saldo inicial invalido", exception.getMessage());
 
     }
 
@@ -25,16 +26,20 @@ public class pruebasRuleta {
     @Test
     void rechazarApuestaNula(){
         Ruleta ruleta = new Ruleta(1340,new RepositorioEnMemoria());
-        assertThrows(IllegalArgumentException.class, () -> {ruleta.jugar(null);
+        Exception exception = assertThrows(IllegalArgumentException.class, () -> {ruleta.jugar(null);
         });
+
+        assertEquals("Apuesta requerida", exception.getMessage());
+
 
     }
 
     @Test
     void apuestaMayorQueSaldo(){
         Ruleta ruleta = new Ruleta(2000,new RepositorioEnMemoria());
-        assertThrows(IllegalArgumentException.class, () -> {ruleta.jugar(new ApuestaImpar(3000));
+        Exception exception = assertThrows(IllegalArgumentException.class, () -> {ruleta.jugar(new ApuestaImpar(3000));
         });
+        assertEquals("Saldo insuficiente", exception.getMessage());
 
     }
     @Test
@@ -52,7 +57,10 @@ public class pruebasRuleta {
         assertEquals(50.0, estadisticas.getPorcentajeVictorias());
         assertEquals("IMPAR", estadisticas.getTipoMasJugado());
 
+    }
 
+    @Test
+    void inicioSesionUsuarioNoRegistrado(){
 
     }
 }
