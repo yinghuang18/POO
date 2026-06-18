@@ -1,0 +1,672 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="e36aa008-51d9-4aa1-a3ff-af8b8dafebad" name="Changes" comment="se corrigió el orden de la creacion de el objeto Estadisticas" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CopilotPersistence">
+    <persistenceIdMap>
+      <entry key="_C:/Users/1818p/IdeaProjects/1er proyecto" value="3BQ9DbE7zYDkOKO96aiCkstm84m" />
+    </persistenceIdMap>
+  </component>
+  <component name="CopilotUserSelectedChatMode">
+    <option name="chatModeId" value="Agent" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="lab08" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;yinghuang18&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/yinghuang18/POO.git&quot;,
+    &quot;accountId&quot;: &quot;dc90d35f-959f-4a6b-b913-40df20e07151&quot;
+  }
+}</component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 7,
+  &quot;fromUser&quot;: false
+}</component>
+  <component name="ProjectId" id="3BQ9DbE7zYDkOKO96aiCkstm84m" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.Launcher.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Ruleta.executor&quot;: &quot;Run&quot;,
+    &quot;Application.RuletaConVentanas.executor&quot;: &quot;Run&quot;,
+    &quot;Downloaded.Files.Path.Enabled&quot;: &quot;false&quot;,
+    &quot;JUnit.pruebasRuleta.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.pruebasRuleta.rachaYtipoMasJugado.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.testUsuario.executor&quot;: &quot;Run&quot;,
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;Repository.Attach.Annotations&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.JavaDocs&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.Sources&quot;: &quot;false&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;lab09&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;onboarding.tips.debug.path&quot;: &quot;C:/Users/1818p/IdeaProjects/1er proyecto/Calculadora-Lab04/src/Main.java&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\1818p\IdeaProjects\1er proyecto\src\Main\java" />
+      <recent name="C:\Users\1818p\IdeaProjects\1er proyecto\src" />
+      <recent name="C:\Users\1818p\IdeaProjects\1er proyecto\src\Modelo" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JUnit.pruebasRuleta.rachaYtipoMasJugado">
+    <configuration name="Launcher" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Launcher.Launcher" />
+      <module name="POO" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Main" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="pruebasRuleta" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ruleta" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="pruebasRuleta" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="pruebasRuleta.rachaYtipoMasJugado" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ruleta" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="pruebasRuleta" />
+      <option name="METHOD_NAME" value="rachaYtipoMasJugado" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="testUsuario" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="POO" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="testUsuario" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="JetRunConfigurationType">
+      <module name="POO" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <module name="POO" />
+      <option name="filePath" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.pruebasRuleta.rachaYtipoMasJugado" />
+        <item itemvalue="JUnit.pruebasRuleta" />
+        <item itemvalue="Application.Main" />
+        <item itemvalue="JUnit.testUsuario" />
+        <item itemvalue="Application.Launcher" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-30f59d01ecdd-2fc7cc6b9a17-intellij.indexing.shared.core-IU-253.32098.37" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="e36aa008-51d9-4aa1-a3ff-af8b8dafebad" name="Changes" comment="" />
+      <created>1774410309733</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1774410309733</updated>
+      <workItem from="1774410313304" duration="2618000" />
+      <workItem from="1774441957064" duration="5013000" />
+      <workItem from="1774525396544" duration="6705000" />
+      <workItem from="1774572649808" duration="3316000" />
+      <workItem from="1774576096624" duration="288000" />
+      <workItem from="1774632081765" duration="20621000" />
+      <workItem from="1775002780979" duration="1921000" />
+      <workItem from="1775075103613" duration="4197000" />
+      <workItem from="1775093433099" duration="605000" />
+      <workItem from="1775130513031" duration="5910000" />
+      <workItem from="1775597506021" duration="13434000" />
+      <workItem from="1775690535101" duration="10613000" />
+      <workItem from="1775737719197" duration="6549000" />
+      <workItem from="1776131620296" duration="274000" />
+      <workItem from="1776132472069" duration="6000" />
+      <workItem from="1776132514929" duration="3000" />
+      <workItem from="1776132703551" duration="411000" />
+      <workItem from="1776133959970" duration="2855000" />
+      <workItem from="1776210660748" duration="6277000" />
+      <workItem from="1776261644768" duration="1386000" />
+      <workItem from="1776343185101" duration="5816000" />
+      <workItem from="1776467042356" duration="188000" />
+      <workItem from="1776490649857" duration="43000" />
+      <workItem from="1776793476284" duration="182000" />
+      <workItem from="1776794149224" duration="6000" />
+      <workItem from="1776948339047" duration="4550000" />
+      <workItem from="1777068300560" duration="13000" />
+    </task>
+    <task id="LOCAL-00006" summary="tipo de apuesta">
+      <option name="closed" value="true" />
+      <created>1774529320723</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1774529320723</updated>
+    </task>
+    <task id="LOCAL-00007" summary="menu de tipo de apuesta">
+      <option name="closed" value="true" />
+      <created>1774529594778</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1774529594778</updated>
+    </task>
+    <task id="LOCAL-00008" summary="menu de tipo de apuesta, mostrar menu, leer opcion">
+      <option name="closed" value="true" />
+      <created>1774530343011</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1774530343011</updated>
+    </task>
+    <task id="LOCAL-00009" summary="menu de tipo de apuesta, mostrar menu, leer opcion">
+      <option name="closed" value="true" />
+      <created>1774530361187</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1774530361187</updated>
+    </task>
+    <task id="LOCAL-00010" summary="menu de tipo de apuesta, mostrar menu, leer opcion">
+      <option name="closed" value="true" />
+      <created>1774530673127</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1774530673127</updated>
+    </task>
+    <task id="LOCAL-00011" summary="menu de tipo de apuesta, mostrar menu,">
+      <option name="closed" value="true" />
+      <created>1774573531500</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1774573531500</updated>
+    </task>
+    <task id="LOCAL-00012" summary="leer opcion">
+      <option name="closed" value="true" />
+      <created>1774573904050</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1774573904050</updated>
+    </task>
+    <task id="LOCAL-00013" summary="llerTipoApuesta()">
+      <option name="closed" value="true" />
+      <created>1774637547637</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1774637547637</updated>
+    </task>
+    <task id="LOCAL-00014" summary="nueva opcion en ejecutarOpcion y metodo girarRuleta">
+      <option name="closed" value="true" />
+      <created>1774639749918</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1774639749918</updated>
+    </task>
+    <task id="LOCAL-00015" summary="evaluar resultado">
+      <option name="closed" value="true" />
+      <created>1774644722930</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1774644722930</updated>
+    </task>
+    <task id="LOCAL-00016" summary="metodo esRojo">
+      <option name="closed" value="true" />
+      <created>1774645334088</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1774645334088</updated>
+    </task>
+    <task id="LOCAL-00017" summary="registrarResultado">
+      <option name="closed" value="true" />
+      <created>1774647537437</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1774647537437</updated>
+    </task>
+    <task id="LOCAL-00018" summary="mostrarResultado">
+      <option name="closed" value="true" />
+      <created>1774648099689</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1774648099689</updated>
+    </task>
+    <task id="LOCAL-00019" summary="mostrarEstadisticas, pequeño arreglo menu">
+      <option name="closed" value="true" />
+      <created>1774652287377</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1774652287377</updated>
+    </task>
+    <task id="LOCAL-00020" summary="pequeño cambio en menu">
+      <option name="closed" value="true" />
+      <created>1774652606815</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1774652606815</updated>
+    </task>
+    <task id="LOCAL-00021" summary="Commit final">
+      <option name="closed" value="true" />
+      <created>1775004020000</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1775004020000</updated>
+    </task>
+    <task id="LOCAL-00022" summary="estructura creada">
+      <option name="closed" value="true" />
+      <created>1775597846131</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1775597846131</updated>
+    </task>
+    <task id="LOCAL-00023" summary="(Para aprender que hace cada linea de codigo)&#10;&#10;-inicializacion harcoded= yo defino los atributos del usuario.&#10;&#10;-USUARIOS es un objeto de lista vacia&#10;&#10;-List&lt;Usuario&gt; = crea una lista que solo guarda elementos de usuario&#10;&#10;-USUARIOS.add(new Usuario(&quot;Ying01&quot;, &quot;112233&quot;, &quot;Ying&quot;)) = lo que hace es crear un nuevo objeto de la clase Usuario y agregarlo al objeto lo cual es una lista vacia al principio.&#10;&#10;-Agregué los import:&#10; import java.util.ArrayList;&#10; import java.util.List;&#10; porque si no List&lt;Usuario&gt; y ArrayList&lt;&gt;() no funcionan y están en rojo">
+      <option name="closed" value="true" />
+      <created>1775599626144</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1775599626144</updated>
+    </task>
+    <task id="LOCAL-00024" summary="VentanaLogin&#10;&#10;-frame.add(componente)= lo que hace es agregar el componente a la ventana">
+      <option name="closed" value="true" />
+      <created>1775600511018</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1775600511018</updated>
+    </task>
+    <task id="LOCAL-00025" summary="mostrarVentana&#10;&#10;frame.setVisibe(true)= hace visible la ventana cuando recibe un true&#10;&#10;frame.setLocationRelativeTo(null);= este comando sirve para fijarle una posición a la ventana y null significa centrarla">
+      <option name="closed" value="true" />
+      <created>1775600955611</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1775600955611</updated>
+    </task>
+    <task id="LOCAL-00026" summary="validar credenciales&#10;&#10;for (Usuario recorrer : USUARIOS) es el equivalente a for i in USUARIOS de python. Solo que en java hay que ponerle el tipo de variable en este caso de la clase Usuario, asi podemos usar sus metodos">
+      <option name="closed" value="true" />
+      <created>1775614561901</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1775614561901</updated>
+    </task>
+    <task id="LOCAL-00027" summary="Lógica login:&#10;&#10;1)recopilar los datos que ingresó el usuario con txtUsuario.getText()&#10;para contraseña es necesario usar un new porque para poder comparar las respuestas hay que convertir el char que nos entrega txtClave.getPassword() a un string, en cambio en el usuario simplemente estamos accediendo a algo que ya esta creado por eso no es necesario el new&#10;&#10;-frame.dispose() = lo que hace es eliminar o quitar la ventana&#10;&#10;-falta abrir la ventana de saludo en login">
+      <option name="closed" value="true" />
+      <created>1775616734864</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1775616734864</updated>
+    </task>
+    <task id="LOCAL-00028" summary="Lógica login:&#10;&#10;1)recopilar los datos que ingresó el usuario con txtUsuario.getText()&#10;para contraseña es necesario usar un new porque para poder comparar las respuestas hay que convertir el char que nos entrega txtClave.getPassword() a un string, en cambio en el usuario simplemente estamos accediendo a algo que ya esta creado por eso no es necesario el new&#10;&#10;-frame.dispose() = lo que hace es eliminar o quitar la ventana&#10;&#10;-falta abrir la ventana de saludo en login">
+      <option name="closed" value="true" />
+      <created>1775616779817</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1775616779817</updated>
+    </task>
+    <task id="LOCAL-00029" summary="se implementó la ventanaSaludo">
+      <option name="closed" value="true" />
+      <created>1775692377084</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1775692377084</updated>
+    </task>
+    <task id="LOCAL-00030" summary="quité el import java.awt.*; de VentanaSaludo">
+      <option name="closed" value="true" />
+      <created>1775692532311</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1775692532311</updated>
+    </task>
+    <task id="LOCAL-00031" summary="se creó la ventana de registro">
+      <option name="closed" value="true" />
+      <created>1775693347689</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1775693347689</updated>
+    </task>
+    <task id="LOCAL-00032" summary="se reutilizó parte del codigo de la ventanaLogin">
+      <option name="closed" value="true" />
+      <created>1775693696910</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1775693696910</updated>
+    </task>
+    <task id="LOCAL-00033" summary="mostrarVentana()">
+      <option name="closed" value="true" />
+      <created>1775694047908</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1775694047908</updated>
+    </task>
+    <task id="LOCAL-00034" summary="agregué el boton de ingresaar y configuraciones de la ventana en VentanaLogin()">
+      <option name="closed" value="true" />
+      <created>1775699336342</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1775699336342</updated>
+    </task>
+    <task id="LOCAL-00035" summary="cambie los nombres de login por las buenas practicas">
+      <option name="closed" value="true" />
+      <created>1775699801898</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1775699801898</updated>
+    </task>
+    <task id="LOCAL-00036" summary="agregué medidas en ventanaRegistri()">
+      <option name="closed" value="true" />
+      <created>1775700138168</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1775700138168</updated>
+    </task>
+    <task id="LOCAL-00037" summary="completé la ventana Launcher.java">
+      <option name="closed" value="true" />
+      <created>1775701111292</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1775701111292</updated>
+    </task>
+    <task id="LOCAL-00038" summary="Commit final">
+      <option name="closed" value="true" />
+      <created>1775701132847</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1775701132847</updated>
+    </task>
+    <task id="LOCAL-00039" summary="Commit final">
+      <option name="closed" value="true" />
+      <created>1775701170224</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1775701170224</updated>
+    </task>
+    <task id="LOCAL-00040" summary="Commit final">
+      <option name="closed" value="true" />
+      <created>1775701228134</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1775701228134</updated>
+    </task>
+    <task id="LOCAL-00041" summary="prueba unitaria en Usuario.java">
+      <option name="closed" value="true" />
+      <created>1775702823322</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1775702823322</updated>
+    </task>
+    <task id="LOCAL-00042" summary="Ventana menu(contiene los siguientes métodos)&#10;&#10;mostrarVentana&#10;leerTipoApuesta">
+      <option name="closed" value="true" />
+      <created>1775742606717</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1775742606717</updated>
+    </task>
+    <task id="LOCAL-00043" summary="ventanaApuesta que incluye los metodos mostrar ventana y cerrar ventana">
+      <option name="closed" value="true" />
+      <created>1775743509699</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1775743509699</updated>
+    </task>
+    <task id="LOCAL-00044" summary="se agregaron funciones y atributo en Usuario">
+      <option name="closed" value="true" />
+      <created>1779975185871</created>
+      <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL-00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1779975185871</updated>
+    </task>
+    <task id="LOCAL-00045" summary="se quitó las vistas y sólo se dejó la lógica en Ruleta&#10;&#10;Se separaron en MVC">
+      <option name="closed" value="true" />
+      <created>1779976381026</created>
+      <option name="number" value="00045" />
+      <option name="presentableId" value="LOCAL-00045" />
+      <option name="project" value="LOCAL" />
+      <updated>1779976381026</updated>
+    </task>
+    <task id="LOCAL-00046" summary="actualizacion de todos los lab a lab 07">
+      <option name="closed" value="true" />
+      <created>1780528361807</created>
+      <option name="number" value="00046" />
+      <option name="presentableId" value="LOCAL-00046" />
+      <option name="project" value="LOCAL" />
+      <updated>1780528361807</updated>
+    </task>
+    <task id="LOCAL-00047" summary="Se importo el codigo exportado del diagrama UML">
+      <option name="closed" value="true" />
+      <created>1780531865633</created>
+      <option name="number" value="00047" />
+      <option name="presentableId" value="LOCAL-00047" />
+      <option name="project" value="LOCAL" />
+      <updated>1780531865633</updated>
+    </task>
+    <task id="LOCAL-00048" summary="Se movió a Maven, se crearon las carpetas correspondientes y se hizo la prueba del caso de prueba número 2: deposito válido incrementa el saldo">
+      <option name="closed" value="true" />
+      <created>1781656795516</created>
+      <option name="number" value="00048" />
+      <option name="presentableId" value="LOCAL-00048" />
+      <option name="project" value="LOCAL" />
+      <updated>1781656795516</updated>
+    </task>
+    <task id="LOCAL-00049" summary="test rechazarSaldoInicialNegativo con assertThrow">
+      <option name="closed" value="true" />
+      <created>1781665850700</created>
+      <option name="number" value="00049" />
+      <option name="presentableId" value="LOCAL-00049" />
+      <option name="project" value="LOCAL" />
+      <updated>1781665850700</updated>
+    </task>
+    <task id="LOCAL-00050" summary="test rechazarApuestaNula y apuestaMayorQueSaldo">
+      <option name="closed" value="true" />
+      <created>1781666849942</created>
+      <option name="number" value="00050" />
+      <option name="presentableId" value="LOCAL-00050" />
+      <option name="project" value="LOCAL" />
+      <updated>1781666849943</updated>
+    </task>
+    <task id="LOCAL-00051" summary="test rachaYtipoMasJugado">
+      <option name="closed" value="true" />
+      <created>1781718135492</created>
+      <option name="number" value="00051" />
+      <option name="presentableId" value="LOCAL-00051" />
+      <option name="project" value="LOCAL" />
+      <updated>1781718135493</updated>
+    </task>
+    <task id="LOCAL-00052" summary="cambio en rechazarSladoInicialNegativo,  rechazarApuestaNula y apuestaMayorQueSaldo para verificar que se recibe el texto deseado al hacer throw">
+      <option name="closed" value="true" />
+      <created>1781722111140</created>
+      <option name="number" value="00052" />
+      <option name="presentableId" value="LOCAL-00052" />
+      <option name="project" value="LOCAL" />
+      <updated>1781722111140</updated>
+    </task>
+    <task id="LOCAL-00053" summary="Test inicioSesionUsuarioNULO">
+      <option name="closed" value="true" />
+      <created>1781723725709</created>
+      <option name="number" value="00053" />
+      <option name="presentableId" value="LOCAL-00053" />
+      <option name="project" value="LOCAL" />
+      <updated>1781723725709</updated>
+    </task>
+    <task id="LOCAL-00054" summary="se corrigió el orden de la creacion de el objeto Estadisticas">
+      <option name="closed" value="true" />
+      <created>1781725087706</created>
+      <option name="number" value="00054" />
+      <option name="presentableId" value="LOCAL-00054" />
+      <option name="project" value="LOCAL" />
+      <updated>1781725087707</updated>
+    </task>
+    <option name="localTasksCounter" value="55" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Lógica login:&#10;&#10;1)recopilar los datos que ingresó el usuario con txtUsuario.getText()&#10;para contraseña es necesario usar un new porque para poder comparar las respuestas hay que convertir el char que nos entrega txtClave.getPassword() a un string, en cambio en el usuario simplemente estamos accediendo a algo que ya esta creado por eso no es necesario el new&#10;&#10;-frame.dispose() = lo que hace es eliminar o quitar la ventana&#10;&#10;-falta abrir la ventana de saludo en login" />
+    <MESSAGE value="se implementó la ventanaSaludo" />
+    <MESSAGE value="quité el import java.awt.*; de VentanaSaludo" />
+    <MESSAGE value="se creó la ventana de registro" />
+    <MESSAGE value="se reutilizó parte del codigo de la ventanaLogin" />
+    <MESSAGE value="mostrarVentana()" />
+    <MESSAGE value="agregué el boton de ingresaar y configuraciones de la ventana en VentanaLogin()" />
+    <MESSAGE value="cambie los nombres de login por las buenas practicas" />
+    <MESSAGE value="agregué medidas en ventanaRegistri()" />
+    <MESSAGE value="completé la ventana Launcher.java" />
+    <MESSAGE value="Commit final" />
+    <MESSAGE value="prueba unitaria en Usuario.java" />
+    <MESSAGE value="Ventana menu(contiene los siguientes métodos)&#10;&#10;mostrarVentana&#10;leerTipoApuesta" />
+    <MESSAGE value="ventanaApuesta que incluye los metodos mostrar ventana y cerrar ventana" />
+    <MESSAGE value="se agregaron funciones y atributo en Usuario" />
+    <MESSAGE value="se quitó las vistas y sólo se dejó la lógica en Ruleta&#10;&#10;Se separaron en MVC" />
+    <MESSAGE value="actualizacion de todos los lab a lab 07" />
+    <MESSAGE value="Se importo el codigo exportado del diagrama UML" />
+    <MESSAGE value="Se movió a Maven, se crearon las carpetas correspondientes y se hizo la prueba del caso de prueba número 2: deposito válido incrementa el saldo" />
+    <MESSAGE value="test rechazarSaldoInicialNegativo con assertThrow" />
+    <MESSAGE value="test rechazarApuestaNula y apuestaMayorQueSaldo" />
+    <MESSAGE value="test rachaYtipoMasJugado" />
+    <MESSAGE value="cambio en rechazarSladoInicialNegativo,  rechazarApuestaNula y apuestaMayorQueSaldo para verificar que se recibe el texto deseado al hacer throw" />
+    <MESSAGE value="Test inicioSesionUsuarioNULO" />
+    <MESSAGE value="se corrigió el orden de la creacion de el objeto Estadisticas" />
+    <option name="LAST_COMMIT_MESSAGE" value="se corrigió el orden de la creacion de el objeto Estadisticas" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/Calculadora-Lab04/src/Main.java</url>
+          <line>11</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/test/java/pruebasRuleta.java</url>
+          <line>46</line>
+          <properties class="pruebasRuleta" method="rachaYtipoMasJugado">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/1er_proyecto$Main.ic" NAME="Main Coverage Results" MODIFIED="1774412824240" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true" />
+  </component>
+  <component name="github-copilot-workspace">
+    <instructionFileLocations>
+      <option value=".github/instructions" />
+    </instructionFileLocations>
+    <promptFileLocations>
+      <option value=".github/prompts" />
+    </promptFileLocations>
+  </component>
+</project>
