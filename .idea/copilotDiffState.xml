@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CopilotDiffPersistence">
+    <option name="pendingDiffs">
+      <map>
+        <entry key="$PROJECT_DIR$/src/Launcher/Launcher.java">
+          <value>
+            <PendingDiffInfo>
+              <option name="filePath" value="$PROJECT_DIR$/src/Launcher/Launcher.java" />
+              <option name="originalContent" value="package Launcher;&#10;&#10;import Main.Controlador.SessionController;&#10;import com.formdev.flatlaf.intellijthemes.FlatDarkPurpleIJTheme;&#10;import javax.swing.*;&#10;&#10;public class Launcher {&#10;    public static void main(String[] args) {&#10;        // ----- APARIENCIA -----&#10;        try {&#10;            UIManager.setLookAndFeel(new FlatDarkPurpleIJTheme());&#10;        } catch (UnsupportedLookAndFeelException e) {&#10;            e.printStackTrace();&#10;        }&#10;&#10;        SessionController session = new SessionController();&#10;        VentanaLogin login = new VentanaLogin(session);&#10;        login.mostrarVentana();&#10;    }&#10;}" />
+              <option name="updatedContent" value="package Launcher;&#13;&#10;&#13;&#10;import Controlador.SessionController;&#10;import Vista.VentanaLogin;&#10;import com.formdev.flatlaf.intellijthemes.FlatDarkPurpleIJTheme;&#13;&#10;import javax.swing.*;&#13;&#10;&#13;&#10;public class Launcher {&#13;&#10;    public static void main(String[] args) {&#13;&#10;        // ----- APARIENCIA -----&#13;&#10;        try {&#13;&#10;            UIManager.setLookAndFeel(new FlatDarkPurpleIJTheme());&#13;&#10;        } catch (UnsupportedLookAndFeelException e) {&#13;&#10;            e.printStackTrace();&#13;&#10;        }&#13;&#10;&#13;&#10;        SessionController session = new SessionController();&#13;&#10;        VentanaLogin login = new VentanaLogin(session);&#13;&#10;        login.mostrarVentana();&#13;&#10;    }&#13;&#10;}" />
+            </PendingDiffInfo>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>
